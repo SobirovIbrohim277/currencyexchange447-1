@@ -6,7 +6,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(),
+      body: Column(
+        children: const [
+          Text("salom"),
+        ],
+      ),
     );
   }
 }
