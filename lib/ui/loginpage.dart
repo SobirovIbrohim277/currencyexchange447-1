@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:imtihon3/ui/valmalumot.dart';
 
 class Imtihon3 extends StatelessWidget {
-  String _email = "Sobirov";
-  String _parol = "2002";
+  String _email = "Email";
+  String _parol = "Parol";
   String _inputEmail = " ";
   String _inputParol = " ";
 
@@ -12,7 +12,7 @@ class Imtihon3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.redAccent[100],
+        backgroundColor: Color.fromARGB(255, 0, 67, 105),
         body: Padding(
           padding: EdgeInsets.all(20.0),
           child: ListView(
@@ -24,36 +24,49 @@ class Imtihon3 extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        "Welcome to the",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35.0,
+                      Center(
+                        child: Text(
+                          "Xalq Banki",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30.0,
+                          ),
                         ),
                       ),
-                      Text(
-                        "Bank of Ibrohim",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35.0,
+                      Center(
+                        child: Text(
+                          "Valyuta Ayirboshlash",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30.0,
+                          ),
+                        ),
+                      ),
+                      Center(
+                        child: Text(
+                          "Tizimi",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30.0,
+                          ),
                         ),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 15.0,
                   ),
                   Container(
-                    height: 200.0,
+                    height: 100.0,
                     width: 350.0,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
-                      color: Colors.redAccent[200],
+                      borderRadius: BorderRadius.circular(20.0),
                       image: DecorationImage(
                         image: NetworkImage(
-                          "https://www.bviib.uz/uploads/news/4b67b4cc2f5420f2422ac4db31521b9d.jpg",
+                          "https://logobank.uz:8005/media/logos_preview/Xalq_banki-01.png",
                         ),
                         fit: BoxFit.cover,
                       ),
@@ -78,13 +91,13 @@ class Imtihon3 extends StatelessWidget {
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20.0)),
-                        hintText: "Sobirov",
-                        labelText: "Email",
+                        hintText: "example@gmail.com",
+                        labelText: "E Mail",
                         labelStyle: TextStyle(color: Colors.black),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0),
                           borderSide: BorderSide(
-                            color: Colors.red,
+                            color: Color.fromARGB(255, 44, 44, 44),
                           ),
                         ),
                       ),
@@ -111,13 +124,13 @@ class Imtihon3 extends StatelessWidget {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
-                        hintText: "2002",
+                        hintText: "Parol",
                         labelText: "Parol",
                         labelStyle: TextStyle(color: Colors.black),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0),
                           borderSide: BorderSide(
-                            color: Colors.green,
+                            color: Color.fromARGB(255, 65, 65, 65),
                           ),
                         ),
                       ),
@@ -133,7 +146,7 @@ class Imtihon3 extends StatelessWidget {
                     width: 300.0,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30.0),
-                      color: Colors.red[300],
+                      color: Color(0xffdfe6e9),
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
