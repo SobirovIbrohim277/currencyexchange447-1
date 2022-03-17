@@ -177,7 +177,7 @@ class Imtihon3 extends StatelessWidget {
                                 context: context,
                                 dialogType: DialogType.SUCCES,
                                 animType: AnimType.SCALE,
-                                title: 'Qabul Qilindi',
+                                title: 'Xush kelibsiz',
                                 desc: "Email va Parolni to'g'ri kiritdingiz",
                                 btnCancelOnPress: () {},
                                 btnOkOnPress: () {
